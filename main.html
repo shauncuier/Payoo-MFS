@@ -18,7 +18,7 @@
                     <h1 class="text-3xl font-bold">$ 4500</h1>
                     <p class="text-2xl font-semibold">Available Balance</p>
                 </div>
-                <button class="btn font-bold">Logout</button>
+                <button id="logout-btn" class="btn font-bold">Logout</button>
             </nav>
 
             <section class="mt-10 mx-5">
@@ -30,7 +30,7 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/purse1.png" alt="">
+                                <img src="./assets/purse1.png" alt="">
                             </div>
                             <p class="text-center">Add Money</p>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/send1.png" alt="">
+                                <img src="./assets/send1.png" alt="">
                             </div>
                             <p class="text-center">Cashout</p>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/money1.png" alt="">
+                                <img src="./assets/money1.png" alt="">
                             </div>
                             <p class="text-center">Transfer Money</p>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/bonus1.png" alt="">
+                                <img src="./assets/bonus1.png" alt="">
                             </div>
                             <p class="text-center">Get Bonus</p>
                         </div>
@@ -62,7 +62,7 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/wallet1.png" alt="">
+                                <img src="./assets/wallet1.png" alt="">
                             </div>
                             <p class="text-center">Pay Bill</p>
                         </div>
@@ -70,21 +70,59 @@
                     <div class="card  bg-base-100 card-xs shadow-sm border border-b-black">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
-                                <img  src="./assets/transaction1.png" alt="">
+                                <img src="./assets/transaction1.png" alt="">
                             </div>
                             <p class="text-center">Transactions</p>
                         </div>
                     </div>
                 </div>
             </section>
+
         </header>
+
+
+        <section>
+            <h2 class="">Add Money</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend class="fieldset-legend">Select Bank</legend>
+                            <select class="select select-neutral">
+                                <option>Choose a Payment Method</option>
+                                <option value="bkash">Bkash</option>
+                                <option value="nagad">Nagad</option>
+                                <option value="dbbl">DBBL</option>
+                                <option value="ucash">UCash</option>
+                                <option value="sbl">Sonali Wallet</option>
+                            </select>
+
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label">Phone Number</label>
+                                <input value="01823456789" id="accountNumber" type="number" class="input"
+                                    placeholder="Phone Number" required />
+                                <label class="fieldset-label">Amount to Add</label>
+                                <input value="999" id="" type="number" class="input"
+                                    placeholder="Phone Number" required />
+                                <label class="fieldset-label">PIN</label>
+                                <input value="1234" id="accountPin" type="text" class="input" placeholder="Type PIN"
+                                    required />
+                                
+                                <button class="btn btn-neutral mt-4">Add Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
         <!-- Login Section -->
 
-        <div class="mt-5">
+        <!-- <div class="mt-5">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
@@ -94,9 +132,12 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
+
+
     <script src="./js/main.js"></script>
+    <script src="./js/logout.js"></script>
 </body>
 
 </html>

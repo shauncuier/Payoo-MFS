@@ -18,8 +18,21 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
     } else {
         alert('Account Number must be 11 digits');
     }
-
-
-
     
 })
+
+
+
+document.getElementById('logout-btn').addEventListener('click', function () {
+    window.location.href = 'index.html';
+    console.log('Logged Out');
+});
+
+
+
+
+
+
+
+// LogOut
+
