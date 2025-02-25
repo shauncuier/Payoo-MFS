@@ -26,15 +26,15 @@
             <div class="hero-content flex-col lg:flex-row-reverse">
                 
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
+                    <form class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label">Phone Number</label>
-                            <input type="number" class="input" placeholder="Phone Number" />
+                            <input id="accountNumber" type="number" class="input" placeholder="Phone Number" required/>
                             <label class="fieldset-label">PIN</label>
-                            <input type="text" class="input" placeholder="Type PIN" />
+                            <input id="accountPin" type="text" class="input" placeholder="Type PIN" required/>
                             <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                         </fieldset>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
