@@ -23,10 +23,10 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
 
 
 
-document.getElementById('logout-btn').addEventListener('click', function () {
-    window.location.href = 'index.html';
-    console.log('Logged Out');
-});
+// document.getElementById('logout-btn').addEventListener('click', function () {
+//     window.location.href = 'index.html';
+//     console.log('Logged Out');
+// });
 
 
 
