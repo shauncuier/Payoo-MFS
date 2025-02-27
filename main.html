@@ -27,7 +27,8 @@
 
 
                 <div class="grid grid-cols-3 gap-4 mt-5">
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div id="addMoneyBox"
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/purse1.png" alt="">
@@ -35,7 +36,8 @@
                             <p class="text-center">Add Money</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div id="cashOutBox"
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/send1.png" alt="">
@@ -43,7 +45,8 @@
                             <p class="text-center">Cashout</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/money1.png" alt="">
@@ -51,7 +54,8 @@
                             <p class="text-center">Transfer Money</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/bonus1.png" alt="">
@@ -59,7 +63,8 @@
                             <p class="text-center">Get Bonus</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/wallet1.png" alt="">
@@ -67,7 +72,8 @@
                             <p class="text-center">Pay Bill</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-100 card-xs shadow-sm border border-b-black  cursor-pointer">
+                    <div
+                        class="card  bg-base-100 hover:bg-amber-100 card-xs shadow-sm border border-b-black hover:border hover:border-amber-300  cursor-pointer">
                         <div class="card-body">
                             <div class="w-full flex justify-center">
                                 <img src="./assets/transaction1.png" alt="">
@@ -79,8 +85,8 @@
             </section>
         </header>
 
-
-        <section>
+        <!-- Add Money -->
+        <section id="addMoney" class="mt-5">
             <h2 class="text-2xl font-semibold p-6">Add Money</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -101,12 +107,38 @@
                                 <input value="01823456789" id="accountNumber" type="number" class="input"
                                     placeholder="Phone Number" required />
                                 <label class="fieldset-label">Amount to Add</label>
-                                <input value="" id="money" type="number" class="input" placeholder="Taka"
-                                    required />
+                                <input value="" id="money" type="number" class="input" placeholder="Taka" required />
                                 <label class="fieldset-label">PIN</label>
                                 <input value="1234" id="accountPin" type="text" class="input" placeholder="Type PIN"
                                     required />
-                                <button id="addMoneyBtn" class="btn btn-neutral mt-4">Add Money</button>
+                                <button id="addMoneyBtn" class="btn btn-soft btn-info mt-4">Add Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Cash Out -->
+
+        <section id="cashOut" class="mt-5">
+            <h2 class="text-2xl font-semibold p-6">Cash Out</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label">Agent Number</label>
+                                <input value="01823456789" id="accountNumber" type="number" class="input"
+                                    placeholder="Phone Number" required />
+                                <label class="fieldset-label">Amount to Add</label>
+                                <input value="" id="money" type="number" class="input" placeholder="Taka" required />
+                                <label class="fieldset-label">PIN</label>
+                                <input value="1234" id="accountPin" type="text" class="input" placeholder="Type PIN"
+                                    required />
+                                <button id="cashOutBtn" class="btn btn-soft btn-warning mt-4">Cash Out</button>
                             </fieldset>
                         </div>
                     </div>
@@ -132,6 +164,8 @@
     <script src="./js/main.js"></script>
     <script src="./js/logout.js"></script>
     <script src="./js/addMoney.js"></script>
+
+    <script src="./js/toggle.js"></script>
 </body>
 
 </html>
