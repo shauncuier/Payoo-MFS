@@ -7,7 +7,6 @@ document
 
         const money = parseInt(amount);
 
-
         const accountNumber = document.getElementById("accountNumber").value;
 
         const accountPin = document.getElementById("accountPin").value;
@@ -24,7 +23,6 @@ document
 
                 document.getElementById("mainBalance").innerText= newBalance;
 
-                console.log(newBalance);
             } else {
                 alert("Incorrect Pin");
             }
