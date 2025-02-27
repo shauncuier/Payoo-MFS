@@ -22,17 +22,8 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
 })
 
 
-
+// LogOut
 // document.getElementById('logout-btn').addEventListener('click', function () {
 //     window.location.href = 'index.html';
 //     console.log('Logged Out');
 // });
-
-
-
-
-
-
-
-// LogOut
-
